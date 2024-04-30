@@ -16,3 +16,4 @@ get the examples from RMPLib: https://github.com/RMPlib/RMPlib/wiki . E.g., one 
  - maxsetsbp.py: the algorithm from Section 4 that enumerate all maximal bicliques, reduces to ILP (1) and invokes gurobi to solve.
  - bicliquesbinsearch.py: the more natural reduction to LP + binary search
  - edgemaxbc.py: the code to search for large maximal bicliques. It invokes findcliquesbp above. Does require some manual intervention. Suggested use is to pipe stdout and stderr to a log file, and then read the log file.
+ - mwis.py: the branch-and-price algorithm from Section 4.2; relies on a routine from constructg.py. Note that this works on the networkx version of the graph, i.e., after reduction to clique partition.
